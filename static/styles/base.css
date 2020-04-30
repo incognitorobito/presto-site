@@ -34,27 +34,43 @@ section {
   margin: 0;
 }
 
-.logo {
+#logo {
   width: 48px;
   height: 48px;
+}
+
+#email-button img {
+  max-height: 48px;
+  margin-bottom: 0.5rem;
+}
+
+#email-button img:last-child {
+  display: none;  
+}
+
+#email-button:hover img:last-child {
+  display: inline;  
+}
+
+#email-button:hover img:first-child {
+  display: none;  
+}
+.columns {
+  height: 100%;
 }
 
 .container {
   height: 100%;
 }
 
-.col-sm-12 * img {
+.col-sm-12 img:first-of-type {
   max-height: 100vh;
 }
 
 @media (max-width: 840px) {
-  .col-sm-12 * img {
+  .col-sm-12 img:first-of-type {
     max-height: 50vh;
   }
-}
-
-.columns {
-  height: 100%;
 }
 
 /**************** CONTAINERS AND LAYOUT HELPERS *****************/
