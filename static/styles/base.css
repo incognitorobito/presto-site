@@ -67,7 +67,7 @@ section {
   max-height: 100vh;
 }
 
-@media (max-width: 840px) {
+@media (max-width: 960px) {
   .col-sm-12 img:first-of-type {
     max-height: 50vh;
   }
